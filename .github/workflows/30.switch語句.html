@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    /*
+     switch(數據){
+        case 值1:
+          代碼1
+          break
+        case 值2:
+          代碼2
+          break
+        default:
+          代碼n
+          break
+      }
+    */
+    // switch (4) {
+    //   case 1:
+    //     console.log('您選擇的是1')
+    //     break //退出switch
+    //   case 2:
+    //     console.log('您選擇的是2')
+    //     break //退出switch
+    //   case 3:
+    //     console.log('您選擇的是3')
+    //     break //退出switch
+    //   default:
+    //     console.log('沒有符合條件的')
+    // }
+
+    // 練習-計算器
+    // 1.用戶輸入
+    let num = +prompt('請輸入第一個數')
+    let num2 = +prompt('請輸入第二個數')
+    let sp = prompt('請輸入+ - * / 其中一個')
+    // 2.判斷輸出
+    switch (sp) {
+      case '+':
+        alert(`兩個數的加法操作是${num + num2}`)
+        break
+      case '-':
+        alert(`兩個數的減法操作是${num - num2}`)
+        break
+      case '*':
+        alert(`兩個數的乘法操作是${num * num2}`)
+        break
+      case '/':
+        alert(`兩個數的除法操作是${num / num2}`)
+        break
+      default:
+        alert('您輸入的格式不符合')
+    }
+  </script>
+</body>
+
+</html>

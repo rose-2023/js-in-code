@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 顯示轉換
+    let str = '123'
+    console.log(Number(str)) //數字類型 123
+    console.log(Number('Rose老師')) // 顯示NaN
+    // let num = Number(prompt('請輸入年薪'))
+    // console.log(Number(num))
+    // let num = +prompt('請輸入年薪') //輸入+也可以，是隱性轉換
+    // console.log(num)
+
+    console.log(parseInt('12px')) // 顯示12，使用parseInt也可以轉換數字類型後面的px它會自動忽略掉
+    console.log(parseInt('12.34px')) //顯示12， parseInt能夠把後面的小數點去掉
+    console.log(parseInt('12.94px')) //12
+    console.log(parseInt('abc 12.3')) //12
+    //在parseInt裡面一樣不能寫不是數字的其他東西不然會顯示NaN
+
+    // ---------------------
+    console.log(parseFloat('12px')) //12
+    console.log(parseFloat('12.34')) //顯示12.94， parseFloat可以保留小數點
+    console.log(parseFloat('12.94')) //12.94
+    console.log(parseFloat('abc 12.3'))
+    //跟parseInt，parseFloat裡面一樣不能寫不是數字的其他東西不然會顯示NaN
+  </script>
+</body>
+
+</html>

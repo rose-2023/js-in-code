@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 三元運算符
+    // 條件? 代碼1 代碼2
+    // console.log(3 > 5 ? 3 : 5)
+    // if (3 < 5) {
+    //   alert('真的')
+    // } else {
+    //   alert('假的')
+    // }
+    // 3 < 5 ? alert('真的') : alert('假的')
+    // >小於
+    // <大於
+    // let sum = 3 < 5 ? 3 : 5
+    // console.log(sum)
+
+    // 練習
+    // 1.用戶輸入
+    // let num = +prompt('請輸入第一個數')
+    // let nums = +prompt('請輸入第二個數')
+    // // 2.判斷輸出-三元運算符
+    // // 如果用if
+    // // if (num > nums) {
+    // //   alert(`最大值是${num} `)
+    // // } else {
+    // //   alert(`最大值是${nums}`)
+    // // }
+    // num > nums ? alert(`最大值是${num}`) : alert(`最大值是${nums}`)
+
+    // 練習2 數字補0案例
+    // 1.用戶輸入
+    let time = +prompt('請用戶輸入一個數字')
+    // 2.判斷輸出 - 小於10才補0
+    // time = time < 10 ? '0' + time : time
+    // let age = 18
+    // age = age +1
+    // 大於=10的寫法
+    time = time >= 10 ? time : '0' + time
+    alert(time)
+  </script>
+</body>
+
+</html>

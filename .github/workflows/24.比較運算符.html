@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 比較運算符
+    console.log(3 > 5)
+    console.log(3 >= 5)
+    console.log(5 >= 5)
+    console.log(2 == 2)
+    // 數字串的2和字符串的2是相等，比較符有隱式轉換 把'2'轉換為2。雙等號只判斷值
+    console.log(2 == '2')
+    // == 和===(雙等)不一樣 ，因為undefined和null是不一樣的值，但輸入==他卻顯示對的(true)，而輸入===卻是(false)
+    // console.log(undefined === null)  //false
+    // console.log(undefined == null) //true
+    // 全等判斷值 和數據類型一樣才行。因為數據是字符串所以不一樣
+    // 以後判斷是否相等要用===
+    console.log(2 === '2') //false
+    console.log(NaN === NaN) //NaN不等於任何人，包括他自己
+    console.log(2 !== '2') //true !==不等於任何人
+
+    // 字符串比較
+    // <小於
+    // >大於
+    console.log('-------------------------------')
+    console.log('a' < 'b') //true，a<b b比a大字母越後面越大
+    console.log('aa' < 'ab') //true ，通常先比較第一個值a<a，在比較後面的值 a<b
+    console.log('aa' < 'aac') //true ，一樣先比較a，相等在比較c
+    console.log('-------------------------------')
+  </script>
+</body>
+
+</html>

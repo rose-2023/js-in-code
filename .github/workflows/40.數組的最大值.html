@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let arr = [2, 6, 1, 7, 400, 55, 88, 100]
+    // max裡面需要存的是最大值
+    let max = arr[0]
+    // min 要存放的是最小值
+    let min = arr[0]
+    for (let i = 1; i < arr.length; i++) {
+      // 如果max 比數組元素裡面的值小，我們就需要要把這個數值元素賦值給max
+      // 也可以使用三元運算數
+      max < arr[i] ? max = arr[i] : max
+      // if (max < arr[i]) {
+      //   max = arr[i]
+      // }
+      // 如果min 比數組元素大， 我們就要把數組元素給min
+      //   if (min > arr[i]) {
+      //     min = arr[i]
+      //   }
+      min > arr[i] ? min = arr[i] : min
+    }
+
+    // 輸出max
+    // 輸出min
+    console.log(`最大值是: ${max}`)
+    console.log(`最小值是: ${min}`)
+  </script>
+</body>
+
+</html>

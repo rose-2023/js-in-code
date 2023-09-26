@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 540px;
+    margin: 20px auto;
+  }
+
+  .box li {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px 10 0;
+    padding: 10px;
+  }
+
+  .box li:nth-child(5n+1) {
+    margin-right: 0;
+  }
+
+  .box li img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #258df2;
+    border-radius: 10px 0 10px 0;
+  }
+</style>
+
+<body>
+  <ul class="box">
+    <script>
+      // // 練習1-需求1.用戶輸入5個有效年齡(0-100之間),放入數組中
+      // // 1.聲明累加數組
+      // let arr = []
+      // // 2.循環遍歷
+      // while (arr.length < 5) {
+      //   //  輸入年齡
+      //   let num = +prompt(`請輸入第${arr.length + 1}个人有效年齡`)
+      //   // 判斷是否有效
+      //   if (num > 0 && num < 100) {
+      //     // 添加數組
+      //     arr.push(num)
+      //   }
+      // }
+      // console.log(arr)
+
+      // // 練習1-需求2.打印輸出成人年齡 > 18
+      // for (let i = 0; i < arr.length; i++) {
+      //   if (arr[i] >= 18) {
+      //     document.write(`已經成人的年齡是${arr[i]}<br>`)
+      //   }
+      // }
+
+      // // 練習1-需求3.打印輸出所有人總年齡(累加)
+      // let sum = 0
+      // for (let i = 0; i < arr.length; i++) {
+      //   sum = sum + arr[i]
+      // }
+      // document.write(`所有人的年齡是:${sum}<br>`)
+
+      // // 練習1-需求4.打印輸出所有人平均年齡(累加)
+      // let average = 0
+      // average = sum / arr.length
+      // document.write(`所有人平均年齡是:${average} <br>`)
+
+      // // 練習1-需求5.打印輸出最大年齡和最小年齡(最大值)
+      // let max = arr[0]
+      // let min = arr[0]
+      // for (let i = 0; i < arr.length; i++) {
+      //   if (max < arr[i]) {
+      //     max = arr[i]
+      //   }
+      //   if (min > arr[i]) {
+      //     min = arr[i]
+      //   }
+      // }
+      // document.write(`最大值是:${max}<br>`)
+      // document.write(`最大值是:${min}<br>`)
+
+      // 練習1-需求5.打印輸出最大年齡和最小年齡(最大值) 排序法
+      // arr.sort(function (a, b) {
+      //   return a - b
+      // }) //升續
+      // let min = arr[0]
+      // let max = arr[arr.length - 1] //
+
+
+      // 練習2-找出數組中 元素為10的下標 有則打印下標，沒有則打印-1
+      // let arr = ['88', '20', '10', '100', '50']
+      // let re = -1 //用於存儲結果，默認沒有
+      // for (let i = 0; i <= arr.length; i++) {
+      //   if (arr[i] === 10) {
+      //     re = i  //如果找到把索引號賦值給re，如果沒有找到，默認值則是-1
+      //     break //找到就退出
+      //   }
+      // }
+      // console.log(re)
+
+
+      // 練習3-求數組元素的和
+      // let arr = [5, 8, 9, 2, 1, 5]
+      // let sum = 0
+      // for (let i = 0; i < arr.length; i++) {
+      //   sum = sum + arr[i]
+      // }
+      // console.log(sum)
+
+      //  練習4-求數組里大於5的和
+      // let arr = [4, 9, 5, 20, 3, 11]
+      // // 1.聲明空數組
+      // let newArr = []
+      // // 2.遍歷數組
+      // for (let i = 0; i < arr.length; i++) {
+      //   if (arr[i] > 5) {
+      //     newArr = newArr + arr[i]
+      //   }
+      // }
+      // console.log(newArr)
+
+      //  練習5-求班級平均年齡
+      // let arr = [15, 19, 21, 33, 18, 24]
+      // // 求和累加
+      // let sum = 0
+      // // 遍歷累加
+      // for (let i = 0; i < arr.length; i++) {
+      //   sum = sum + arr[i]
+      // }
+      // // 輸出平均值
+      // console.log(sum / arr.length)
+
+      // 練習8-去除有0的數組
+      // let arr = [0, 5, 2, 4, 3, 0]
+      // let newArr = []
+      // for (let i = 0; i < arr.length; i++) {
+      //   if (arr[i] !== 0) {
+      //     newArr = newArr + arr[i]
+      //   }
+      // }
+      // console.log(newArr)
+
+      // 練習9-核心練習題
+      // 1.用戶彈框
+      let arr = [
+        './js需要練習的images/神奇寶貝1.jpg',
+        './js需要練習的images/神奇寶貝2.jpg',
+        './js需要練習的images/神奇寶貝3.jpg',
+        './js需要練習的images/神奇寶貝4.jpg',
+        './js需要練習的images/神奇寶貝5.jpg',
+        './js需要練習的images/神奇寶貝6.jpg',
+        './js需要練習的images/神奇寶貝7.jpg',
+        './js需要練習的images/神奇寶貝8.jpg',
+        './js需要練習的images/神奇寶貝9.jpg',
+        './js需要練習的images/神奇寶貝10.jpg',
+        './js需要練習的images/神奇寶貝11.jpg',
+        './js需要練習的images/神奇寶貝12.jpg',
+        './js需要練習的images/神奇寶貝13.jpg',
+        './js需要練習的images/神奇寶貝14.jpg',
+        './js需要練習的images/神奇寶貝15.jpg',
+        './js需要練習的images/神奇寶貝16.jpg',
+        './js需要練習的images/神奇寶貝17.jpg',
+        './js需要練習的images/神奇寶貝18.jpg',
+        './js需要練習的images/神奇寶貝19.jpg',
+        './js需要練習的images/神奇寶貝20.jpg'
+      ]
+      let num = +prompt('請用戶輸入寶可夢圖片1~20之間:')
+      for (let i = 0; i < num; i++) {
+        document.write(`
+        <li>
+          <img src="${arr[i]}" alt="">
+          </li>
+        `)
+      }
+    </script>
+  </ul>
+</body>
+
+</html>

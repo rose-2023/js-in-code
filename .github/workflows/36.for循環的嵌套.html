@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 外層循環打印的是 第n天 
+    // for (let i = 1; i <= 3; i++) {
+    //   document.write(`第${i}天<br>`)
+    //   // 裡層循環打印的是 第幾個單字
+    //   for (let j = 1; j <= 5; j++) {
+    //     document.write(`記住了第${j}個單詞<br>`)
+    //   }
+    // }
+
+    // 練習1打印五行五列小星星
+    // 外部循環打印行數5行
+    // for (let i = 1; i <= 5; i++) {
+    //   // 內部循環打印5個
+    //   for (let j = 1; j <= 5; j++) {
+    //     document.write('☆')
+    //   }
+    //   // 進行換行顯示
+    //   document.write('<br>')
+    // }
+
+    // 練習2讓用戶輸入幾行幾列
+    // let row = +prompt('請輸入列數')
+    // let col = +prompt('請輸入行數')
+    // for (let i = 1; i <= row; i++) {
+    //   for (let j = 1; j <= col; j++) {
+    //     document.write('☆')
+    //   }
+    //   // 進行換行顯示
+    //   document.write('<br>')
+    // }
+
+    // 練習3讓星星一行換一列
+    // 外部循環打印行數5行
+    for (let i = 1; i <= 5; i++) {
+      // 內部循環打印5個
+      for (let j = 1; j <= i; j++) {
+        document.write('☆')
+      }
+      // 進行換行顯示
+      document.write('<br>')
+    }
+
+  </script>
+</body>
+
+</html>

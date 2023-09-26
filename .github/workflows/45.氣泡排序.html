@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 氣泡排序
+    let arr = [2, 4, 3, 5, 1]
+    // for (let i = 0; i < arr.length; i++) {
+    //   for (let j = 0; j < arr.length; j++) {
+    //     // 開始交換 但是前提 地一個數大於第二個數才交換
+    //     if (arr[i] > arr[j + 1]) {
+    //       // 交換2個變量
+    //       let temp = arr[j]
+    //       arr[j] = arr[j + 1]
+    //       arr[j + 1] = temp
+    //     }
+    //   }
+    // }
+    // arr.sort() //排序
+    // sort 升序排列
+    // arr.sort(function (a, b) {
+    //   return a - b
+    // })
+    // sort 降序
+    arr.sort(function (a, b) {
+      return b - a
+    })
+    console.log(arr)
+
+    // let num1 = 10
+    // let num2 = 20
+    // let temp = num1
+    // num1 = num2
+    // num2 = temp
+  </script>
+</body>
+
+</html>

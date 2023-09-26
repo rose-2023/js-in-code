@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 1. 打印0-20之間的數
+    // for (let i = 0; i <= 20; i++) {
+    //   console.log(`0-20之間的整數是${i}`)
+    // }
+
+    // 2. 1-1000之間的累加和
+    // let sum = 0
+    // // 2.判斷輸出
+    // for (let i = 1; i <= 1000; i++) {
+    //   sum = sum + i
+    // }
+    // console.log(`1-1000之間的累加和是${sum}`)
+
+    // 3. 頁面打印100-200之間可以被6整除的數
+    // for (let i = 100; i <= 200; i++)
+    //   if (i % 6 === 0) {
+    //     document.write(`這是100-200可以被6除的數 ${i}<br>`)
+    //   }
+
+    // 4. 彈出輸入框輸入兩個數值，輸出兩個數字中最大的值
+    // 1.用戶輸入
+    // let num = +prompt('請輸入第一個數字')
+    // let num2 = +prompt('請輸入第二個數字')
+    // // 2.判斷書出
+    // num > num2 ? alert(`最大值是${num}`) : alert(`最大值是${num2}`)
+
+    // 5.用戶輸入一個個數，計算1到個數的累加和
+    // 1.用戶輸入
+    // let nums = +prompt('請輸入1-5其中的數字')
+    // let b = 0
+    // // 2.判斷輸出
+    // for (let i = 1; i <= nums; i++) {
+    //   b = b + i
+    // }
+    // console.log(`累加的值為 ${b}`)
+
+    // 6.輸出成績案例(使用if分支語句)，依分數輸出A、B、C、D、E
+    //  90分已上輸出，A
+    //  80-90分輸出，B
+    //  70-80分輸出，C
+    //  60-70分輸出，D
+    //  60分(不含)以下輸出，E
+    //  1.用戶輸入
+    // let socer = +prompt('請輸入成績')
+    // // 2.判斷輸出
+    // if (socer >= 90) {
+    //   alert('成績等級為A')
+    // } else if (socer >= 80) {
+    //   alert('成績等級為B')
+    // } else if (socer >= 70) {
+    //   alert('成績等級為C')
+    // } else if (socer >= 60) {
+    //   alert('成績等級為D')
+    // } else {
+    //   alert('成績等級為E')
+    // }
+
+    // 7.輸出星期練習(switch分支語句)，用戶輸入星期一也面輸出monday
+    // 1.用戶輸出
+    // let week = prompt('請輸入1-7之間的一個數字')
+    // // 2.判斷輸出
+    // switch (week) {
+    //   case '1':
+    //     alert('星期一為Monday')
+    //     break
+    //   case '2':
+    //     alert('星期二為Tuesday')
+    //     break
+    //   case '3':
+    //     alert('星期三為Wednesday')
+    //     break
+    //   case '4':
+    //     alert('星期四為Thursday')
+    //     break
+    //   case '5':
+    //     alert('星期五為Friday')
+    //     break
+    //   case '6':
+    //     alert('星期六為Saturday')
+    //     break
+    //   case '7':
+    //     alert('星期七為Sunday')
+    //     break
+    //   default:
+    //     alert('您輸入的格式錯誤')
+    // }
+
+    // 8.用戶登入驗證
+    // 1.用戶輸入
+
+    // 2.用戶判斷
+    // if (name === 'admin' && pas === '123456') {
+    //   alert('登入成功')
+    // } else {
+    //   alert('姓名或密碼錯誤')
+    // }
+
+    // while (true) {
+    //   let name = prompt('請輸入姓名')
+    //   let pas = prompt('請輸入密碼')
+    //   if (name === 'admin' && pas === '123456') {
+    //     break
+    //   }
+    // }
+    // alert('登入成功')
+    // 9.數字+-*/的計算，輸入q則退出
+    while (true) {
+      let re = prompt(`
+      1.輸入+-*/計算兩個數字的結果
+      2.如果是q則退出
+      `)
+      if (re === 'q') {
+        break
+      } else {
+        let x = +prompt('請輸入第一個字')
+        let y = +prompt('請輸入第二個字')
+        if (re === '+') {
+          alert(`兩個數的和是:${x + y}`)
+        } if (re === '-') {
+          alert(`兩個數的和是:${x - y}`)
+        } if (re === '*') {
+          alert(`兩個數的和是:${x * y}`)
+        } if (re === '/') {
+          alert(`兩個數的和是:${x / y}`)
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

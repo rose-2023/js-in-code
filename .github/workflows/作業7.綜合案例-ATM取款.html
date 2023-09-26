@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 1.開始無限循環
+    // 3.準備一個總金額
+    let money = 100
+    while (true) {
+      let str = +prompt(`請問您需要以下哪種服務:
+      1.存錢
+      2.取錢
+      3.查看餘額
+      4.退出`)
+      // 2.如果用戶選4 則退出循環
+      if (str === 4) {
+        break
+      }
+      // 4.根據輸入做操作
+      switch (str) {
+        case 1:
+          // 存錢
+          let cun = +prompt('請輸入存款金額')
+          money = money + cun
+          break
+        case 2:
+          // 取錢
+          let sav = +prompt('請輸入取款金額')
+          money = money - sav
+          break
+        case 3:
+          // 查看餘額
+          alert(`查看銀行卡餘額${money}`)
+          break
+      }
+    }
+  </script>
+</body>
+
+</html>

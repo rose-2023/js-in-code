@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  h2 {
+    text-align: center;
+  }
+
+  table {
+    /* 合併相鄰邊框 */
+    border-collapse: collapse;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  th {
+    padding: 5px 30px;
+  }
+
+  table,
+  td,
+  th {
+    border: 1px solid #000;
+  }
+</style>
+
+<body>
+  <h2>訂單確認</h2>
+
+
+  <script>
+    // 1.用戶輸入
+    let price = Number(prompt('請輸入價格:'))
+    let num = +prompt('請輸入數量:')
+    let addres = prompt('請輸入地址:')
+    // 2.計算總額
+    let total = price * num
+    // 3.打印輸出 使用模板字符串
+    document.write(`
+      <table>
+      <tr>
+        <th>商品名稱</th>
+        <th>商品價格</th>
+        <th>商品數量</th>
+        <th>總價</th>
+        <th>收貨地址</th>
+      </tr>
+      <tr>
+        <td>小米青春版PLUS</td>
+        <td>${price}元</td>
+        <td>${num}</td>
+        <td>${total}元</td>
+        <td>${addres}</td>
+      </tr>
+      <table>
+    `)
+    // 練習
+    // const num1 = 10
+    // console.log(num1 + 11) //21
+    // console.log(num1 + '11') //1011
+    // console.log(num1 + +'11') //21
+
+    // const num2 = 10
+    // console.log(typeof num2 + '12') //Number11
+    // console.log(typeof (num2 + '11'))//string
+    // console.log(typeof (num2 + +'11'))//Number
+  </script>
+</body>
+
+</html>

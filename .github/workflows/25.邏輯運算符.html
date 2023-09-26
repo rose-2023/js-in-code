@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 1.邏輯運算符
+    // 邏輯與 一假則假
+    console.log(true && true) //true
+    console.log(true && false) //false
+    console.log(3 < 5 && 5 < 6) //true
+    console.log(5 < 3 && 3 < 5) //false
+    console.log('------------------------')
+
+    // 2.邏輯或 一真則真
+    console.log(true || true) //true
+    console.log(false || true) //true
+    // 邏輯或 只有2個false是假的
+    console.log(false || false) //false
+    console.log('------------------------')
+
+    // 3.邏輯非 取反
+    console.log(!true) //false
+    console.log(!false)  //true
+    console.log('------------------------')
+    // 練習
+    // 1.用戶輸入
+    // let num = +prompt('請輸入一個數字:')
+    // // 2.彈出結果
+    // alert(num % 4 === 0 && num % 100 !== 0)
+
+    // 練習1
+    console.log(a = 3 > 5 && 2 < 7 && 3 == 4)//false
+    // 先判斷3>5，3大於5是false，2<7，7大於2是ture，3不等於4，結果是false
+
+    // 練習2
+    console.log(b = 3 <= 4 || 3 > 1 || 3 != 2) //true
+    //判斷3<=4，3小於等於4是ture(真)，3>1，3大於1是ture(真)，3!=2，3非等於2是ture(真)
+
+    // 練習3
+    let c = 2 === '2'
+    console.log(c) //false
+    //2不等於===相等的'2'，因為'2'是字串
+
+    // 練習4
+    let d = !c || b && a
+    console.log(d) //true
+    //c加了!成了反義詞取ture(真)，b是ture(真)a是false(假)
+    //先算邏輯與 一假則假所以是false(假)，之後再算邏輯或 一真則真，結果是ture
+
+  </script>
+</body>
+
+</html>

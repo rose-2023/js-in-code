@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 雙分支語法
+    /*  if(條件){
+    滿足條件要執行的代碼
+    } else{
+    不滿足條件要執行的代碼
+    }
+    */
+
+    // 練習
+    // 1.輸入用戶和密碼
+    // let name = prompt('請輸入用戶名')
+    // let password = prompt('請輸入密碼')
+    // // 2.執行判斷輸出
+    // if (name === 'pink老師' && password === '123456') {
+    //   alert('登入成功')
+    // } else {
+    //   alert('用戶名或者密碼錯誤')
+    // }
+
+    // 練習2
+    // 1.輸入判斷
+    let year = +prompt('請輸入年分')
+    // 2.判斷輸出
+    if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
+      alert(`${year}年是閏年`)
+    } else {
+      alert(`${year}年是平年`)
+    }
+  </script>
+</body>
+
+</html>

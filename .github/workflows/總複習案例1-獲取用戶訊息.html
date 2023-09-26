@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  h2 {
+    text-align: center;
+  }
+
+  /* 合併相鄰邊框 */
+  table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+    height: 80px;
+
+  }
+
+  th {
+    padding: 5px 30px;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid #000;
+  }
+</style>
+
+<body>
+  <h2>2023年7月消費支出</h2>
+  <script>
+    // 練習案例1
+    // // 1.輸入姓名、年齡、性別
+    // let name = prompt('請輸入您的姓名:')
+    // let age = prompt('請輸入您的年齡:')
+    // let gender = prompt('請輸入您的性別:')
+    // // 2.打印輸出
+    // console.log(`用戶的姓名:${name}`)
+    // console.log(`用戶的年齡:${age}`)
+    // console.log(`用戶的性別:${gender}`)
+
+    // // 練習案例2
+    // // 1.輸入年齡、5歲的變量
+    // let age = +prompt('您現在多少歲了?')
+    // let ages = Number(5)
+    // // 2.加上+5歲(計算)，打印輸出
+    // console.log(`據我估計，五年後，您可能${age + ages}歲了`)
+
+    // 練習案例3
+    <!-- // 1.輸入銀行卡金額、電費、水費、網費 -->
+    let bank = +prompt('請輸入您的金額:')
+    let ele = +prompt('請輸入您的電費:')
+    let wat = +prompt('請輸入您的水費:')
+    let wife = Number(prompt('請輸入您的網費:'))
+    // 2.銀行卡余額
+    let sum = bank - ele - wat - wife
+    // 3.打印輸出
+    document.write(`
+       <table>
+       <tr>
+         <th>銀行卡金額</th>
+         <th>電費</th>
+         <th>水費</th>
+         <th>網費</th>
+         <th>銀行卡余額</th>
+       </tr>
+       <tr>
+         <td>${bank}</td>
+         <td>${ele}元</td>
+         <td>${wat}元</td>
+         <td>${wife}元</td>
+         <td>${sum}元</td>
+       </tr>
+       </table>
+    `)
+    // let age = 18
+    // // 在打印輸出時如果要套用變量的話需要使用``反義福號而不是單引號''或是""只能是`
+    // console.log(`你好，我叫小川，我的年齡是${age}`)
+  </script>
+
+
+
+</body>
+
+</html>
